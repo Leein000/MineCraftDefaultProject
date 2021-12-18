@@ -8,12 +8,12 @@ public class Main extends JavaPlugin {
     public static String prefix = "§f[§9Plugin§f]";
 
     @Override
-    public void onDisable() {
+    public void onEnable() {
         pl = this;
         getCommand("cmd").setExecutor(new CMD());
     }
 
     @Override
-    public void onEnable() {
+    public void onDisable() {
     }
 }
